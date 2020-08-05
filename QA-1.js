@@ -18,9 +18,10 @@ var arr = [
 
 function returnCount(myArr, searchVal) {
     myArr = myArr.flat(Infinity);
-        return myArr.filter(function(e) {
-            return e.indexOf(searchVal) >= 0;
-        }).length;
+
+    return myArr.filter((e) => {
+        return e.indexOf(searchVal) >= 0;
+    }).length
 }
 
 console.log(returnCount(arr,"TK"));
